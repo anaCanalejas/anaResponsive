@@ -1,8 +1,4 @@
-/*
-	Miniport 2.5 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 window._skel_config = {
 	preset: 'standard',
@@ -44,5 +40,20 @@ jQuery(function() {
 				_bh.animate({ scrollTop: pos }, 'slow', 'swing');
 			}
 		});
+
+	// Pop-ups
+		$(function() {
+    		$( "#demo1" ).dialog({
+      			autoOpen: false,
+     			closeText: "x" 
+
+  });
+ 
+   			 $( "#idDemo1" ).click(function() {
+    			  $( "#demo1" ).dialog( "open" );
+    			});
+ 		 });
+    		
+ 		 
 
 });
